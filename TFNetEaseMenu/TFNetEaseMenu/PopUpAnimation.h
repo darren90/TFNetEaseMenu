@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PopUpAnimation : UIView
-
+- (void)addAnimate;
 @end

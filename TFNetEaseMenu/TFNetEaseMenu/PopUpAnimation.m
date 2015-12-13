@@ -9,7 +9,9 @@
 #import "PopUpAnimation.h"
 
 @implementation PopUpAnimation
-
++ (instancetype)view{
+    return [[PopUpAnimation alloc]init];
+}
 -(instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
@@ -23,6 +25,11 @@
     [super layoutSubviews];
     
     
+}
+
+- (void)addAnimate
+{
+
 }
 
 @end
