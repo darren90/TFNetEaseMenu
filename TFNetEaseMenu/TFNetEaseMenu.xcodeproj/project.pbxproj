@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FED4D2451C1DABFD00CF9E4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED4D2441C1DABFD00CF9E4C /* main.m */; };
+		FED4D2481C1DABFD00CF9E4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED4D2471C1DABFD00CF9E4C /* AppDelegate.m */; };
+		FED4D24B1C1DABFD00CF9E4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED4D24A1C1DABFD00CF9E4C /* ViewController.m */; };
+		FED4D24E1C1DABFD00CF9E4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED4D24C1C1DABFD00CF9E4C /* Main.storyboard */; };
+		FED4D2501C1DABFD00CF9E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED4D24F1C1DABFD00CF9E4C /* Assets.xcassets */; };
+		FED4D2531C1DABFD00CF9E4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED4D2511C1DABFD00CF9E4C /* LaunchScreen.storyboard */; };
+		FED4D25E1C1DABFD00CF9E4C /* TFNetEaseMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FED4D25D1C1DABFD00CF9E4C /* TFNetEaseMenuTests.m */; };
+		FED4D2691C1DABFD00CF9E4C /* TFNetEaseMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FED4D2681C1DABFD00CF9E4C /* TFNetEaseMenuUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FED4D25A1C1DABFD00CF9E4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FED4D2381C1DABFD00CF9E4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FED4D23F1C1DABFD00CF9E4C;
+			remoteInfo = TFNetEaseMenu;
+		};
+		FED4D2651C1DABFD00CF9E4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FED4D2381C1DABFD00CF9E4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FED4D23F1C1DABFD00CF9E4C;
+			remoteInfo = TFNetEaseMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FED4D2401C1DABFD00CF9E4C /* TFNetEaseMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFNetEaseMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED4D2441C1DABFD00CF9E4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FED4D2461C1DABFD00CF9E4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FED4D2471C1DABFD00CF9E4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FED4D2491C1DABFD00CF9E4C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FED4D24A1C1DABFD00CF9E4C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FED4D24D1C1DABFD00CF9E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FED4D24F1C1DABFD00CF9E4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FED4D2521C1DABFD00CF9E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FED4D2541C1DABFD00CF9E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED4D2591C1DABFD00CF9E4C /* TFNetEaseMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFNetEaseMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED4D25D1C1DABFD00CF9E4C /* TFNetEaseMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFNetEaseMenuTests.m; sourceTree = "<group>"; };
+		FED4D25F1C1DABFD00CF9E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED4D2641C1DABFD00CF9E4C /* TFNetEaseMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFNetEaseMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED4D2681C1DABFD00CF9E4C /* TFNetEaseMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFNetEaseMenuUITests.m; sourceTree = "<group>"; };
+		FED4D26A1C1DABFD00CF9E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FED4D23D1C1DABFD00CF9E4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED4D2561C1DABFD00CF9E4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED4D2611C1DABFD00CF9E4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FED4D2371C1DABFD00CF9E4C = {
+			isa = PBXGroup;
+			children = (
+				FED4D2421C1DABFD00CF9E4C /* TFNetEaseMenu */,
+				FED4D25C1C1DABFD00CF9E4C /* TFNetEaseMenuTests */,
+				FED4D2671C1DABFD00CF9E4C /* TFNetEaseMenuUITests */,
+				FED4D2411C1DABFD00CF9E4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FED4D2411C1DABFD00CF9E4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FED4D2401C1DABFD00CF9E4C /* TFNetEaseMenu.app */,
+				FED4D2591C1DABFD00CF9E4C /* TFNetEaseMenuTests.xctest */,
+				FED4D2641C1DABFD00CF9E4C /* TFNetEaseMenuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FED4D2421C1DABFD00CF9E4C /* TFNetEaseMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FED4D2461C1DABFD00CF9E4C /* AppDelegate.h */,
+				FED4D2471C1DABFD00CF9E4C /* AppDelegate.m */,
+				FED4D2491C1DABFD00CF9E4C /* ViewController.h */,
+				FED4D24A1C1DABFD00CF9E4C /* ViewController.m */,
+				FED4D24C1C1DABFD00CF9E4C /* Main.storyboard */,
+				FED4D24F1C1DABFD00CF9E4C /* Assets.xcassets */,
+				FED4D2511C1DABFD00CF9E4C /* LaunchScreen.storyboard */,
+				FED4D2541C1DABFD00CF9E4C /* Info.plist */,
+				FED4D2431C1DABFD00CF9E4C /* Supporting Files */,
+			);
+			path = TFNetEaseMenu;
+			sourceTree = "<group>";
+		};
+		FED4D2431C1DABFD00CF9E4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FED4D2441C1DABFD00CF9E4C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FED4D25C1C1DABFD00CF9E4C /* TFNetEaseMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				FED4D25D1C1DABFD00CF9E4C /* TFNetEaseMenuTests.m */,
+				FED4D25F1C1DABFD00CF9E4C /* Info.plist */,
+			);
+			path = TFNetEaseMenuTests;
+			sourceTree = "<group>";
+		};
+		FED4D2671C1DABFD00CF9E4C /* TFNetEaseMenuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FED4D2681C1DABFD00CF9E4C /* TFNetEaseMenuUITests.m */,
+				FED4D26A1C1DABFD00CF9E4C /* Info.plist */,
+			);
+			path = TFNetEaseMenuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FED4D23F1C1DABFD00CF9E4C /* TFNetEaseMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED4D26D1C1DABFD00CF9E4C /* Build configuration list for PBXNativeTarget "TFNetEaseMenu" */;
+			buildPhases = (
+				FED4D23C1C1DABFD00CF9E4C /* Sources */,
+				FED4D23D1C1DABFD00CF9E4C /* Frameworks */,
+				FED4D23E1C1DABFD00CF9E4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFNetEaseMenu;
+			productName = TFNetEaseMenu;
+			productReference = FED4D2401C1DABFD00CF9E4C /* TFNetEaseMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FED4D2581C1DABFD00CF9E4C /* TFNetEaseMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED4D2701C1DABFD00CF9E4C /* Build configuration list for PBXNativeTarget "TFNetEaseMenuTests" */;
+			buildPhases = (
+				FED4D2551C1DABFD00CF9E4C /* Sources */,
+				FED4D2561C1DABFD00CF9E4C /* Frameworks */,
+				FED4D2571C1DABFD00CF9E4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FED4D25B1C1DABFD00CF9E4C /* PBXTargetDependency */,
+			);
+			name = TFNetEaseMenuTests;
+			productName = TFNetEaseMenuTests;
+			productReference = FED4D2591C1DABFD00CF9E4C /* TFNetEaseMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FED4D2631C1DABFD00CF9E4C /* TFNetEaseMenuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED4D2731C1DABFD00CF9E4C /* Build configuration list for PBXNativeTarget "TFNetEaseMenuUITests" */;
+			buildPhases = (
+				FED4D2601C1DABFD00CF9E4C /* Sources */,
+				FED4D2611C1DABFD00CF9E4C /* Frameworks */,
+				FED4D2621C1DABFD00CF9E4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FED4D2661C1DABFD00CF9E4C /* PBXTargetDependency */,
+			);
+			name = TFNetEaseMenuUITests;
+			productName = TFNetEaseMenuUITests;
+			productReference = FED4D2641C1DABFD00CF9E4C /* TFNetEaseMenuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FED4D2381C1DABFD00CF9E4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = tengfei;
+				TargetAttributes = {
+					FED4D23F1C1DABFD00CF9E4C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					FED4D2581C1DABFD00CF9E4C = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = FED4D23F1C1DABFD00CF9E4C;
+					};
+					FED4D2631C1DABFD00CF9E4C = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = FED4D23F1C1DABFD00CF9E4C;
+					};
+				};
+			};
+			buildConfigurationList = FED4D23B1C1DABFD00CF9E4C /* Build configuration list for PBXProject "TFNetEaseMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FED4D2371C1DABFD00CF9E4C;
+			productRefGroup = FED4D2411C1DABFD00CF9E4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FED4D23F1C1DABFD00CF9E4C /* TFNetEaseMenu */,
+				FED4D2581C1DABFD00CF9E4C /* TFNetEaseMenuTests */,
+				FED4D2631C1DABFD00CF9E4C /* TFNetEaseMenuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FED4D23E1C1DABFD00CF9E4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED4D2531C1DABFD00CF9E4C /* LaunchScreen.storyboard in Resources */,
+				FED4D2501C1DABFD00CF9E4C /* Assets.xcassets in Resources */,
+				FED4D24E1C1DABFD00CF9E4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED4D2571C1DABFD00CF9E4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED4D2621C1DABFD00CF9E4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FED4D23C1C1DABFD00CF9E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED4D24B1C1DABFD00CF9E4C /* ViewController.m in Sources */,
+				FED4D2481C1DABFD00CF9E4C /* AppDelegate.m in Sources */,
+				FED4D2451C1DABFD00CF9E4C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED4D2551C1DABFD00CF9E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED4D25E1C1DABFD00CF9E4C /* TFNetEaseMenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED4D2601C1DABFD00CF9E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED4D2691C1DABFD00CF9E4C /* TFNetEaseMenuUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FED4D25B1C1DABFD00CF9E4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FED4D23F1C1DABFD00CF9E4C /* TFNetEaseMenu */;
+			targetProxy = FED4D25A1C1DABFD00CF9E4C /* PBXContainerItemProxy */;
+		};
+		FED4D2661C1DABFD00CF9E4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FED4D23F1C1DABFD00CF9E4C /* TFNetEaseMenu */;
+			targetProxy = FED4D2651C1DABFD00CF9E4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FED4D24C1C1DABFD00CF9E4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED4D24D1C1DABFD00CF9E4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FED4D2511C1DABFD00CF9E4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED4D2521C1DABFD00CF9E4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FED4D26B1C1DABFD00CF9E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FED4D26C1C1DABFD00CF9E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FED4D26E1C1DABFD00CF9E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TFNetEaseMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.neteastMenu.TFNetEaseMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FED4D26F1C1DABFD00CF9E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TFNetEaseMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.neteastMenu.TFNetEaseMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FED4D2711C1DABFD00CF9E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TFNetEaseMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.neteastMenu.TFNetEaseMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFNetEaseMenu.app/TFNetEaseMenu";
+			};
+			name = Debug;
+		};
+		FED4D2721C1DABFD00CF9E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TFNetEaseMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.neteastMenu.TFNetEaseMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFNetEaseMenu.app/TFNetEaseMenu";
+			};
+			name = Release;
+		};
+		FED4D2741C1DABFD00CF9E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TFNetEaseMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.neteastMenu.TFNetEaseMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TFNetEaseMenu;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FED4D2751C1DABFD00CF9E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TFNetEaseMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.neteastMenu.TFNetEaseMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TFNetEaseMenu;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FED4D23B1C1DABFD00CF9E4C /* Build configuration list for PBXProject "TFNetEaseMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED4D26B1C1DABFD00CF9E4C /* Debug */,
+				FED4D26C1C1DABFD00CF9E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED4D26D1C1DABFD00CF9E4C /* Build configuration list for PBXNativeTarget "TFNetEaseMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED4D26E1C1DABFD00CF9E4C /* Debug */,
+				FED4D26F1C1DABFD00CF9E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FED4D2701C1DABFD00CF9E4C /* Build configuration list for PBXNativeTarget "TFNetEaseMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED4D2711C1DABFD00CF9E4C /* Debug */,
+				FED4D2721C1DABFD00CF9E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FED4D2731C1DABFD00CF9E4C /* Build configuration list for PBXNativeTarget "TFNetEaseMenuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED4D2741C1DABFD00CF9E4C /* Debug */,
+				FED4D2751C1DABFD00CF9E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FED4D2381C1DABFD00CF9E4C /* Project object */;
+}
