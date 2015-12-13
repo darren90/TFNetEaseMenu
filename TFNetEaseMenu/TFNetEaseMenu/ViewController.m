@@ -34,22 +34,23 @@
     [anmationView setBackgroundImage:[UIImage imageNamed:@"ic_01"] forState:UIControlStateNormal];
     
     
-    UIButton *rightItem = [[UIButton alloc]init];
-    self.rightItem = rightItem;
-    UIWindow *win = [UIApplication sharedApplication].windows.firstObject;
-    [win addSubview:rightItem];
-    [rightItem addTarget:self action:@selector(rightItemClick) forControlEvents:UIControlEventTouchUpInside];
-    rightItem.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 45, 20, 45, 45);
-    NSLog(@"%@",NSStringFromCGRect(rightItem.frame));
-    [rightItem setImage:[UIImage imageNamed:@"top_navigation_square"] forState:UIControlStateNormal];
+//    UIButton *rightItem = [[UIButton alloc]init];
+//    self.rightItem = rightItem;
+//    UIWindow *win = [UIApplication sharedApplication].windows.firstObject;
+//    [win addSubview:rightItem];
+//    [rightItem addTarget:self action:@selector(rightItemClick) forControlEvents:UIControlEventTouchUpInside];
+//    rightItem.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 45, 20, 45, 45);
+//    NSLog(@"%@",NSStringFromCGRect(rightItem.frame));
+//    [rightItem setImage:[UIImage imageNamed:@"top_navigation_square"] forState:UIControlStateNormal];
     
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"动画" style:UIBarButtonItemStyleDone target:self action:@selector(jumpToClassify)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"动画" style:UIBarButtonItemStyleDone target:self action:@selector(jumpToClassify)];
 }
 
 -(void)jumpToClassify
 {
 
-    [self performPopUpAnimation];
+//    [self performPopUpAnimation];
+    [self addPopUp];
 }
 
 
@@ -74,23 +75,24 @@
 }
 
 
-- (void)addWeather{
+- (void)addPopUp{
     PopUpAnimation *popUpView = [[PopUpAnimation alloc]init]                                                                     ;
 //    popUpView.weatherModel = self.weatherModel;
     self.popUpView = popUpView;
-    popUpView.alpha = 0.9;
-    UIWindow *win = [UIApplication sharedApplication].windows.firstObject;
-    [win addSubview:popUpView];
+//    popUpView.alpha = 0.9;
+//    UIWindow *win = [UIApplication sharedApplication].windows.firstObject;
+//    [win addSubview:popUpView];
+    [self.view addSubview:popUpView];
     
     UIImageView *tran = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"224"]];
     self.tran = tran;
     tran.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 33, 57, 7, 7);
-    [win addSubview:tran];
+//    [win addSubview:tran];
     
     popUpView.frame = [UIScreen mainScreen].bounds;
 //    popUpView.y = 64;
 //    popUpView.height -= 64;
-    self.popUpView.hidden = YES;
+    self.popUpView.hidden = NO;
     self.tran.hidden = YES;
     
 //    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(pushWeatherDetail) name:@"pushWeatherDetail" object:nil];
