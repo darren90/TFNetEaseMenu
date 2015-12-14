@@ -61,7 +61,7 @@
     [self pop_removeAllAnimations];
     POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
     anim.springBounciness = 10;//10;
-    anim.springSpeed = 20;
+    anim.springSpeed = 15;
     anim.fromValue = [NSValue valueWithCGPoint:CGPointMake(0, 0)];
     anim.toValue = [NSValue valueWithCGPoint:CGPointMake(1.0, 1.0)];
     

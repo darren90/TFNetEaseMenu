@@ -97,8 +97,8 @@
         ItemModel *m2 = [ItemModel itemModel:@"202" title:@"上头条"];
         ItemModel *m3 = [ItemModel itemModel:@"203" title:@"离线"];
         ItemModel *m4 = [ItemModel itemModel:@"205" title:@"夜间"];
-        ItemModel *m5 = [ItemModel itemModel:@"202" title:@"扫一扫"];
-        ItemModel *m6 = [ItemModel itemModel:@"206" title:@"邀请有礼"];
+        ItemModel *m5 = [ItemModel itemModel:@"203" title:@"扫一扫"];
+        ItemModel *m6 = [ItemModel itemModel:@"202" title:@"邀请有礼"];
         NSArray *arr = @[m1,m2,m3,m4,m5,m6];
         _dataArray = arr;
     }
