@@ -37,6 +37,9 @@
     
     CGFloat margin  = 10;
     self.itemBtn.frame = CGRectMake(margin, margin, (self.frame.size.width - margin)/2, (self.frame.size.height - margin)/2);
+    
+    self.layer.cornerRadius = self.frame.size.width / 2;
+    self.clipsToBounds = YES;
 }
 
 

@@ -13,11 +13,12 @@
 
 @property (nonatomic,strong)UIColor *color;
 
-
 @property (nonatomic,copy)NSString * iconUrl;
-
 
 @property (nonatomic,copy)NSString * title;
 
+-(instancetype)initWithItemModel:(NSString *)iconUrl title:(NSString *)title;
+
++(instancetype)itemModel:(NSString *)iconUrl title:(NSString *)title;
 
 @end
