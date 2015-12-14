@@ -8,12 +8,14 @@
 
 #import "PopUpAnimation.h"
 #import "ItemCell.h"
+#import "ItemModel.h"
 
 @interface PopUpAnimation()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic,strong)UICollectionView * collectionView;
 @property (nonatomic,strong)UICollectionViewFlowLayout *layout;
 
+@property (nonatomic,strong)NSArray *dataArray;
 @end
 
 @implementation PopUpAnimation
@@ -76,14 +78,33 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 9;
+    return self.dataArray.count;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"123" forIndexPath:indexPath];
+    cell.model = self.dataArray[indexPath.item];
     return cell;
 }
+
+-(NSArray *)dataArray
+{
+    if (!_dataArray) {
+        _dataArray = [NSArray array];
+        
+        ItemModel *m1 = [ItemModel itemModel:@"204" title:@"搜索"];
+        ItemModel *m2 = [ItemModel itemModel:@"202" title:@"上头条"];
+        ItemModel *m3 = [ItemModel itemModel:@"203" title:@"离线"];
+        ItemModel *m4 = [ItemModel itemModel:@"205" title:@"夜间"];
+        ItemModel *m5 = [ItemModel itemModel:@"202" title:@"扫一扫"];
+        ItemModel *m6 = [ItemModel itemModel:@"206" title:@"邀请有礼"];
+        NSArray *arr = @[m1,m2,m3,m4,m5,m6];
+        _dataArray = arr;
+    }
+    return _dataArray;
+}
+
 
 
 @end
