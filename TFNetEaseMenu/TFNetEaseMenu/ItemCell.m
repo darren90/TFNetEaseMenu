@@ -7,10 +7,13 @@
 //
 
 #import "ItemCell.h"
+#import "ItemButton.h"
+
+#define KRandomColor     [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
 
 @interface ItemCell ()
 
-@property (nonatomic,weak)UIImageView * iconView;
+@property (nonatomic,weak) ItemButton* itemBtn;
 
 @end
 
@@ -20,13 +23,21 @@
 -(instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        UIImageView * iconView= [[UIImageView alloc]init];
-        self.iconView = iconView;
-        [self addSubview:iconView];
+        self.backgroundColor = KRandomColor;
+        
+        ItemButton* itemBtn = [ItemButton buttonWithType:UIButtonTypeCustom];
+        [self addSubview:itemBtn];
+        self.itemBtn = itemBtn;
     }
     return self;
 }
-
+-(void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    CGFloat margin  = 10;
+    self.itemBtn.frame = CGRectMake(margin, margin, (self.frame.size.width - margin)/2, (self.frame.size.height - margin)/2);
+}
 
 
 

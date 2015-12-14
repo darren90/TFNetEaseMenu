@@ -11,7 +11,8 @@
 
 @interface PopUpAnimation()<UICollectionViewDataSource,UICollectionViewDelegate>
 
-@property (nonatomic,weak)UICollectionView * collectionView;
+@property (nonatomic,strong)UICollectionView * collectionView;
+@property (nonatomic,strong)UICollectionViewFlowLayout *layout;
 
 @end
 
@@ -32,13 +33,18 @@
         collectionView.delegate = self;
         collectionView.dataSource = self;
         [self addSubview:collectionView];
-        collectionView.backgroundColor = [UIColor blueColor];
+        collectionView.backgroundColor = [UIColor whiteColor];
         [collectionView registerClass:[ItemCell class] forCellWithReuseIdentifier:@"123"];
+        collectionView.scrollEnabled = NO;
         
-        CGFloat width = self.frame.size.width;
-        CGFloat collectionW = width / 3;
-        layout.itemSize = CGSizeMake(collectionW, collectionW);
-        layout.minimumLineSpacing = 0;
+//        CGFloat width = self.frame.size.width;
+//        CGFloat collectionW = width / 3;
+//        layout.itemSize = CGSizeMake(collectionW, collectionW);
+//        layout.minimumLineSpacing = 0;
+//        layout.minimumLineSpacing = 10;
+//        layout.minimumInteritemSpacing = 10;
+//        layout.sectionInset = UIEdgeInsetsMake(40/3, 10,10, 10);
+        self.layout = layout;
         [collectionView reloadData];
     }
     return self;
@@ -50,24 +56,47 @@
     
     CGRect rect = CGRectMake(0, self.frame.size.height - 500, self.frame.size.width, 400);
     self.collectionView.frame = rect;
+    CGFloat width = self.frame.size.width;
+    CGFloat collectionW = (width - 4 * 10) / 3;
+    self.layout.itemSize = CGSizeMake(collectionW, collectionW);
+    self.layout.minimumLineSpacing = 10;
+    self.layout.minimumInteritemSpacing = 10;
+    self.layout.sectionInset = UIEdgeInsetsMake(10, 10,10, 10);
 }
 
 - (void)addAnimate
 {
 
 }
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 20;
+    return 9;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"123" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor grayColor];
     return cell;
 }
 
 
-
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+

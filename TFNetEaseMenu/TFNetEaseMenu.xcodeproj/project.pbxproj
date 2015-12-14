@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		89FE2BAF1C1E5B89008D80E3 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE2BAE1C1E5B89008D80E3 /* ItemCell.m */; };
+		89FE2BB21C1E5F88008D80E3 /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE2BB11C1E5F88008D80E3 /* ItemModel.m */; };
+		89FE2BB51C1E6058008D80E3 /* ItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE2BB41C1E6058008D80E3 /* ItemButton.m */; };
 		FD2726B92AA6C122051324D6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E3F6A7D2A9EDDC73F98BEB /* libPods.a */; };
 		FED4D2451C1DABFD00CF9E4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED4D2441C1DABFD00CF9E4C /* main.m */; };
 		FED4D2481C1DABFD00CF9E4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED4D2471C1DABFD00CF9E4C /* AppDelegate.m */; };
@@ -42,6 +44,10 @@
 		0FA3FA3EE79FF31E7BB072E0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		89FE2BAD1C1E5B89008D80E3 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
 		89FE2BAE1C1E5B89008D80E3 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		89FE2BB01C1E5F88008D80E3 /* ItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		89FE2BB11C1E5F88008D80E3 /* ItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
+		89FE2BB31C1E6058008D80E3 /* ItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemButton.h; sourceTree = "<group>"; };
+		89FE2BB41C1E6058008D80E3 /* ItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemButton.m; sourceTree = "<group>"; };
 		E6E3F6A7D2A9EDDC73F98BEB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED4D2401C1DABFD00CF9E4C /* TFNetEaseMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFNetEaseMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED4D2441C1DABFD00CF9E4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -139,6 +145,10 @@
 				FED4D2771C1DB08F00CF9E4C /* PopUpAnimation.m */,
 				89FE2BAD1C1E5B89008D80E3 /* ItemCell.h */,
 				89FE2BAE1C1E5B89008D80E3 /* ItemCell.m */,
+				89FE2BB01C1E5F88008D80E3 /* ItemModel.h */,
+				89FE2BB11C1E5F88008D80E3 /* ItemModel.m */,
+				89FE2BB31C1E6058008D80E3 /* ItemButton.h */,
+				89FE2BB41C1E6058008D80E3 /* ItemButton.m */,
 				FED4D24C1C1DABFD00CF9E4C /* Main.storyboard */,
 				FED4D24F1C1DABFD00CF9E4C /* Assets.xcassets */,
 				FED4D2511C1DABFD00CF9E4C /* LaunchScreen.storyboard */,
@@ -339,11 +349,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FE2BB21C1E5F88008D80E3 /* ItemModel.m in Sources */,
 				89FE2BAF1C1E5B89008D80E3 /* ItemCell.m in Sources */,
 				FED4D24B1C1DABFD00CF9E4C /* ViewController.m in Sources */,
 				FED4D2481C1DABFD00CF9E4C /* AppDelegate.m in Sources */,
 				FED4D2451C1DABFD00CF9E4C /* main.m in Sources */,
 				FED4D2781C1DB08F00CF9E4C /* PopUpAnimation.m in Sources */,
+				89FE2BB51C1E6058008D80E3 /* ItemButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
