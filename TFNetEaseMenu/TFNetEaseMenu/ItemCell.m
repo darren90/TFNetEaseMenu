@@ -10,9 +10,6 @@
 #import "ItemButton.h"
 #import "ItemModel.h"
 #import <pop/POP.h>
-
-#define KRandomColor     [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
-
 @interface ItemCell ()
 
 @property (nonatomic,weak) ItemButton* itemBtn;
@@ -25,7 +22,7 @@
 -(instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = KRandomColor;
+//        self.backgroundColor = KRandomColor;
         
         ItemButton* itemBtn = [ItemButton buttonWithType:UIButtonTypeCustom];
         [self addSubview:itemBtn];
@@ -36,24 +33,18 @@
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    
-    CGFloat margin  = 10;
-    self.itemBtn.frame = self.bounds;//CGRectMake(margin, margin, (self.frame.size.width - margin), (self.frame.size.height - margin));
-    
-    self.layer.cornerRadius = self.frame.size.width / 2;
-    self.clipsToBounds = YES;
-//    self.itemBtn.backgroundColor = [UIColor blueColor];
+ 
+    self.itemBtn.frame = self.bounds; 
 }
 
 -(void)setModel:(ItemModel *)model
 {
     _model = model;
     
-//    [self.itemBtn setTitle:model.title forState:UIControlStateNormal];
+    [self.itemBtn setTitle:model.title forState:UIControlStateNormal];
     [self.itemBtn setImage:[UIImage imageNamed:model.iconUrl] forState:UIControlStateNormal];
     [self performPopUpAnimation];
 }
-
 
 #pragma mark 需要的效果
 -(void)performPopUpAnimation

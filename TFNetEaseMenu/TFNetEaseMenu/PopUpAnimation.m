@@ -60,7 +60,7 @@
     self.collectionView.frame = rect;
     CGFloat width = self.frame.size.width;
     CGFloat collectionW = (width - 4 * 10) / 3;
-    self.layout.itemSize = CGSizeMake(collectionW, collectionW);
+    self.layout.itemSize = CGSizeMake(collectionW, collectionW + 30);
     self.layout.minimumLineSpacing = 10;
     self.layout.minimumInteritemSpacing = 10;
     self.layout.sectionInset = UIEdgeInsetsMake(10, 10,10, 10);
