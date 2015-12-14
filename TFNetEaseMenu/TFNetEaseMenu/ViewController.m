@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <pop/POP.h>
 #import "PopUpAnimation.h"
+#import "ItemCell.h"
 @interface ViewController ()
 
 @property (nonatomic,weak)UIButton * anmationView;

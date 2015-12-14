@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89FE2BAF1C1E5B89008D80E3 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE2BAE1C1E5B89008D80E3 /* ItemCell.m */; };
 		FD2726B92AA6C122051324D6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E3F6A7D2A9EDDC73F98BEB /* libPods.a */; };
 		FED4D2451C1DABFD00CF9E4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED4D2441C1DABFD00CF9E4C /* main.m */; };
 		FED4D2481C1DABFD00CF9E4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED4D2471C1DABFD00CF9E4C /* AppDelegate.m */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		0E8295296FF12D1459206607 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		0FA3FA3EE79FF31E7BB072E0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		89FE2BAD1C1E5B89008D80E3 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		89FE2BAE1C1E5B89008D80E3 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
 		E6E3F6A7D2A9EDDC73F98BEB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED4D2401C1DABFD00CF9E4C /* TFNetEaseMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFNetEaseMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED4D2441C1DABFD00CF9E4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				FED4D24A1C1DABFD00CF9E4C /* ViewController.m */,
 				FED4D2761C1DB08F00CF9E4C /* PopUpAnimation.h */,
 				FED4D2771C1DB08F00CF9E4C /* PopUpAnimation.m */,
+				89FE2BAD1C1E5B89008D80E3 /* ItemCell.h */,
+				89FE2BAE1C1E5B89008D80E3 /* ItemCell.m */,
 				FED4D24C1C1DABFD00CF9E4C /* Main.storyboard */,
 				FED4D24F1C1DABFD00CF9E4C /* Assets.xcassets */,
 				FED4D2511C1DABFD00CF9E4C /* LaunchScreen.storyboard */,
@@ -334,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89FE2BAF1C1E5B89008D80E3 /* ItemCell.m in Sources */,
 				FED4D24B1C1DABFD00CF9E4C /* ViewController.m in Sources */,
 				FED4D2481C1DABFD00CF9E4C /* AppDelegate.m in Sources */,
 				FED4D2451C1DABFD00CF9E4C /* main.m in Sources */,
